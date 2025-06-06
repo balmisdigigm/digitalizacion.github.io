@@ -1,0 +1,508 @@
+<!DOCTYPE html><html><head>
+      <title>UD5 Planes de transformación digital de la empresa</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      @import url(https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css);
+code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}@font-face{font-family:"Material Icons";font-style:normal;font-weight:400;src:local("Material Icons"),local("MaterialIcons-Regular"),url("data:application/x-font-woff;charset=utf-8;base64,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") format("woff")}.admonition{box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12),0 3px 1px -2px rgba(0,0,0,.2);position:relative;margin:1.5625em 0;padding:0 1.2rem;border-left:.4rem solid rgba(68,138,255,.8);border-radius:.2rem;background-color:rgba(255,255,255,.05);overflow:auto}.admonition>p{margin-top:.8rem}.admonition>.admonition-title{margin:0 -1.2rem;padding:.8rem 1.2rem .8rem 3.6rem;border-bottom:1px solid rgba(68,138,255,.2);background-color:rgba(68,138,255,.1);font-weight:700}.admonition>.admonition-title:before{position:absolute;left:1.2rem;font-size:1.5rem;color:rgba(68,138,255,.8);content:"\E3C9"}.admonition>.admonition-title:before{font-family:Material Icons;font-style:normal;font-variant:normal;font-weight:400;line-height:2rem;text-transform:none;white-space:nowrap;speak:none;word-wrap:normal;direction:ltr}.admonition.abstract,.admonition.summary,.admonition.tldr{border-left-color:rgba(0,176,255,.8)}.admonition.abstract>.admonition-title,.admonition.summary>.admonition-title,.admonition.tldr>.admonition-title{background-color:rgba(0,176,255,.1);border-bottom-color:rgba(0,176,255,.2)}.admonition.abstract>.admonition-title:before,.admonition.summary>.admonition-title:before,.admonition.tldr>.admonition-title:before{color:#00b0ff;content:"\E8D2"}.admonition.hint,.admonition.tip{border-left-color:rgba(0,191,165,.8)}.admonition.hint>.admonition-title,.admonition.tip>.admonition-title{background-color:rgba(0,191,165,.1);border-bottom-color:rgba(0,191,165,.2)}.admonition.hint>.admonition-title:before,.admonition.tip>.admonition-title:before{color:#00bfa5;content:"\E80E"}.admonition.info,.admonition.todo{border-left-color:rgba(0,184,212,.8)}.admonition.info>.admonition-title,.admonition.todo>.admonition-title{background-color:rgba(0,184,212,.1);border-bottom-color:rgba(0,184,212,.2)}.admonition.info>.admonition-title:before,.admonition.todo>.admonition-title:before{color:#00b8d4;content:"\E88E"}.admonition.check,.admonition.done,.admonition.success{border-left-color:rgba(0,200,83,.8)}.admonition.check>.admonition-title,.admonition.done>.admonition-title,.admonition.success>.admonition-title{background-color:rgba(0,200,83,.1);border-bottom-color:rgba(0,200,83,.2)}.admonition.check>.admonition-title:before,.admonition.done>.admonition-title:before,.admonition.success>.admonition-title:before{color:#00c853;content:"\E876"}.admonition.faq,.admonition.help,.admonition.question{border-left-color:rgba(100,221,23,.8)}.admonition.faq>.admonition-title,.admonition.help>.admonition-title,.admonition.question>.admonition-title{background-color:rgba(100,221,23,.1);border-bottom-color:rgba(100,221,23,.2)}.admonition.faq>.admonition-title:before,.admonition.help>.admonition-title:before,.admonition.question>.admonition-title:before{color:#64dd17;content:"\E887"}.admonition.attention,.admonition.caution,.admonition.warning{border-left-color:rgba(255,145,0,.8)}.admonition.attention>.admonition-title,.admonition.caution>.admonition-title,.admonition.warning>.admonition-title{background-color:rgba(255,145,0,.1);border-bottom-color:rgba(255,145,0,.2)}.admonition.attention>.admonition-title:before{color:#ff9100;content:"\E417"}.admonition.caution>.admonition-title:before,.admonition.warning>.admonition-title:before{color:#ff9100;content:"\E002"}.admonition.fail,.admonition.failure,.admonition.missing{border-left-color:rgba(255,82,82,.8)}.admonition.fail>.admonition-title,.admonition.failure>.admonition-title,.admonition.missing>.admonition-title{background-color:rgba(255,82,82,.1);border-bottom-color:rgba(255,82,82,.2)}.admonition.fail>.admonition-title:before,.admonition.failure>.admonition-title:before,.admonition.missing>.admonition-title:before{color:#ff5252;content:"\E14C"}.admonition.bug,.admonition.danger,.admonition.error{border-left-color:rgba(255,23,68,.8)}.admonition.bug>.admonition-title,.admonition.danger>.admonition-title,.admonition.error>.admonition-title{background-color:rgba(255,23,68,.1);border-bottom-color:rgba(255,23,68,.2)}.admonition.danger>.admonition-title:before{color:#ff1744;content:"\E3E7"}.admonition.error>.admonition-title:before{color:#ff1744;content:"\E14C"}.admonition.bug>.admonition-title:before{color:#ff1744;content:"\E868"}.admonition.example,.admonition.snippet{border-left-color:rgba(0,184,212,.8)}.admonition.example>.admonition-title,.admonition.snippet>.admonition-title{background-color:rgba(0,184,212,.1);border-bottom-color:rgba(0,184,212,.2)}.admonition.example>.admonition-title:before,.admonition.snippet>.admonition-title:before{color:#00b8d4;content:"\E242"}.admonition.cite,.admonition.quote{border-left-color:rgba(158,158,158,.8)}.admonition.cite>.admonition-title,.admonition.quote>.admonition-title{background-color:rgba(158,158,158,.1);border-bottom-color:rgba(158,158,158,.2)}.admonition.cite>.admonition-title:before,.admonition.quote>.admonition-title:before{color:#9e9e9e;content:"\E244"}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+@font-face {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/catamaran/v27/o-0bIpQoyXQa2RxT7-5B6Ryxs2E_6n1iPHjd5a7dvg.ttf) format('truetype');
+}
+.markdown-preview.markdown-preview .box_bg_lightgrey {
+  background-color: #f5f5f5;
+  border: 2px solid #969696;
+  padding: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 7px 0 rgba(78, 120, 158, 0.1);
+}
+.markdown-preview.markdown-preview .box_bg_lightgreen {
+  background-color: #f5faf5;
+  border: 2px solid #969b96;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 7px 0 rgba(78, 120, 158, 0.1);
+}
+.markdown-preview.markdown-preview .contenedor {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto 30px auto;
+}
+.markdown-preview.markdown-preview .fondo {
+  background: url(https://balmisdigigs.github.io/digitalizacion.github.io/imagenes/fondos/quote.png);
+  background-size: cover;
+  width: 75%;
+  height: 160px;
+  border-radius: 10px;
+  position: relative;
+}
+.markdown-preview.markdown-preview .cita {
+  font-family: Arial;
+  font-style: italic;
+  font-weight: 600;
+  text-align: justify;
+  line-height: 1.5rem;
+  opacity: 0.6;
+  color: white;
+  padding: 5rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  font-size: 1.3rem;
+  transform: translate(-50%, -50%);
+}
+.markdown-preview.markdown-preview .abre_comilla {
+  font-family: "Catamaran";
+  font-weight: 600;
+  color: white;
+  padding-left: 30px;
+  position: absolute;
+  font-size: 6rem;
+  transform: translate(0%, -15%);
+}
+.markdown-preview.markdown-preview .cierra_comilla {
+  font-family: "Catamaran";
+  font-weight: 600;
+  color: white;
+  padding-right: 30px;
+  right: 0%;
+  position: absolute;
+  font-size: 6rem;
+  transform: translate(0%, 55%);
+}
+.markdown-preview.markdown-preview .autor {
+  font-family: Arial;
+  color: white;
+  margin: 0px;
+  padding-left: 30px;
+  position: absolute;
+  top: 83%;
+  font-size: 1rem;
+}
+.markdown-preview.markdown-preview .flotante {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+@media (max-width: 550px) {
+  .markdown-preview.markdown-preview .flotante {
+    justify-content: center;
+  }
+}
+@media (min-width: 550px) {
+  .markdown-preview.markdown-preview .flotante {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 550px) {
+  .markdown-preview.markdown-preview .flotante {
+    flex-direction: column;
+  }
+}
+@media (min-width: 550px) {
+  .markdown-preview.markdown-preview .flotante {
+    flex-direction: row;
+  }
+}
+.markdown-preview.markdown-preview .flotante_izq {
+  margin-right: 15px;
+}
+@media (max-width: 550px) {
+  .markdown-preview.markdown-preview .flotante_izq {
+    width: 100%;
+  }
+}
+@media (min-width: 550px) {
+  .markdown-preview.markdown-preview .flotante_izq {
+    width: auto;
+  }
+}
+@media (max-width: 550px) {
+  .markdown-preview.markdown-preview .flotante_der {
+    width: 100%;
+  }
+}
+@media (min-width: 550px) {
+  .markdown-preview.markdown-preview .flotante_der {
+    width: auto;
+  }
+}
+.markdown-preview.markdown-preview .galeria_imagenes {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+@media (max-width: 550px) {
+  .markdown-preview.markdown-preview .galeria_imagenes {
+    flex-direction: column;
+  }
+}
+@media (min-width: 550px) {
+  .markdown-preview.markdown-preview .galeria_imagenes {
+    flex-direction: row;
+  }
+}
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+    const configureMermaidIconPacks = () => {
+        window["mermaid"].registerIconPacks([
+            {
+                name: "logos",
+                loader: () =>
+                    fetch("https://unpkg.com/@iconify-json/logos@1/icons.json").then(
+                        (res) => res.json()
+                    ),
+            },
+        ]);
+    };
+
+    if (document.readyState !== 'loading') {
+        configureMermaidIconPacks();
+    } else {
+        document.addEventListener("DOMContentLoaded", () => {
+            configureMermaidIconPacks();
+        });
+    }
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="ud5-planes-de-transformación">UD5 Planes de transformación </h1>
+<p><a href="./u5.pdf">Descargar estos apuntes</a></p>
+<h2 id="índice">Índice </h2>
+
+<div class="md-toc">
+<div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#introducción-a-los-planes-de-transformación" class="md-toc-link">
+            <p>Introducción a los Planes de Transformación</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#configuración-de-una-empresa-clásica-y-su-digitalización" class="md-toc-link">
+            <p>Configuración de una Empresa Clásica y su Digitalización</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#tecnologías-habilitadoras-digitales-thd-en-la-transformación" class="md-toc-link">
+            <p>Tecnologías Habilitadoras Digitales (THD) en la Transformación</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#configuración-de-la-empresa-digitalizada" class="md-toc-link">
+            <p>Configuración de la Empresa Digitalizada</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#el-plan-de-transformación" class="md-toc-link">
+            <p>El Plan de Transformación</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#el-rol-de-los-recursos-humanos-en-la-empresa-40" class="md-toc-link">
+            <p>El Rol de los Recursos Humanos en la Empresa 4.0</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#conclusiones" class="md-toc-link">
+            <p>Conclusiones</p>
+
+          </a></div>
+</div>
+<div style="page-break-after:always;"></div>
+<h3 id="introducción-a-los-planes-de-transformación">Introducción a los Planes de Transformación </h3>
+<h4 id="objetivo-de-la-unidad">Objetivo de la Unidad </h4>
+<p>La Unidad 5, "Planes de transformación", busca capacitar al alumnado para crear un plan de transformación para una empresa clásica, llevándola de una economía lineal a un modelo de "Empresa 4.0".   Este proceso implica identificar los cambios necesarios en las fases principales del sistema productivo o de servicios y analizar cómo afectan a los recursos humanos.   El objetivo es desarrollar una comprensión práctica de cómo las empresas deben adaptarse a la era digital para mantenerse relevantes y competitivas.</p>
+<h4 id="la-necesidad-de-transformación-en-la-era-digital">La Necesidad de Transformación en la Era Digital </h4>
+<p>La digitalización es ahora una necesidad para la supervivencia y el crecimiento empresarial.   La "Cuarta Revolución Industrial" ha redefinido los modelos de negocio, procesos y expectativas del cliente con tecnologías como IoT, Big Data, IA y la computación en la nube.   Las empresas tradicionales con procesos manuales y estructuras rígidas enfrentan desafíos como la pérdida de eficiencia y la incapacidad de responder a cambios rápidos.   Un plan de transformación digital va más allá de la adopción tecnológica; es un cambio profundo que abarca estrategia, cultura, procesos y personas,   buscando reinventar cómo la empresa crea valor en un entorno digital.   Este plan es crucial para guiar la organización, minimizando riesgos y maximizando oportunidades.</p>
+<hr>
+<h3 id="configuración-de-una-empresa-clásica-y-su-digitalización">Configuración de una Empresa Clásica y su Digitalización </h3>
+<h4 id="características-de-una-empresa-clásica-pre-digital">Características de una Empresa Clásica (Pre-digital) </h4>
+<p><img src=".img/5.2.png" alt="Empresa clásica vs digital"></p>
+<p>Antes de la transformación, es clave entender una "empresa clásica",  con modelos operativos previos a la masificación digital:</p>
+<ul>
+<li><strong>Procesos Manuales o Semi-Automatizados</strong>: Tareas manuales frecuentes, generando ineficiencias y errores.</li>
+<li><strong>Sistemas de Información Aislados (Silos)</strong>: Departamentos con sistemas no conectados, dificultando una visión integral.</li>
+<li><strong>Comunicación Jerárquica y Lenta</strong>: Flujos de comunicación que ralentizan la toma de decisiones.</li>
+<li><strong>Enfoque en el Producto</strong>: Mayor atención a la producción y venta, con menos personalización para el cliente.</li>
+<li><strong>Resistencia al Cambio</strong>: Aversión a nuevas formas de trabajo o tecnologías.</li>
+<li><strong>Toma de Decisiones por Experiencia o Intuición</strong>: Decisiones basadas en experiencia o intuición, no siempre óptimas.</li>
+<li><strong>Infraestructura Tecnológica Limitada u Obsoleta</strong>: Infraestructura de TI insuficiente para la digitalización.</li>
+<li><strong>Visibilidad Limitada de la Cadena de Valor</strong>: Falta de transparencia en tiempo real en la cadena de suministro.<br>
+Comprender estos puntos es vital para identificar áreas prioritarias y desafíos.</li>
+</ul>
+<h4 id="el-concepto-de-digitalización-empresarial">El Concepto de Digitalización Empresarial </h4>
+<p>La "digitalización de la empresa" es el uso de tecnologías digitales para transformar el modelo de negocio, generando nuevos ingresos y valor.   Implica una reimaginación de la operación empresarial,  aplicándose en:</p>
+<ul>
+<li><strong>Procesos Internos</strong>: Optimización de producción, inventarios, finanzas, RRHH.</li>
+<li><strong>Relación con el Cliente</strong>: Marketing digital, ventas online, servicio al cliente personalizado.</li>
+<li><strong>Productos y Servicios</strong>: Desarrollo de productos inteligentes, servicios basados en datos.</li>
+<li><strong>Modelos de Negocio</strong>: Creación de nuevas fuentes de ingresos, entrada a nuevos mercados.</li>
+</ul>
+<h4 id="identificación-de-áreas-clave-para-la-digitalización">Identificación de Áreas Clave para la Digitalización </h4>
+<p>Un enfoque estratégico prioriza áreas donde la digitalización tendrá mayor impacto.  Áreas clave incluyen:</p>
+<ul>
+<li><strong>Operaciones y Producción</strong>: Sensores (IoT) y análisis de datos optimizan la producción.</li>
+<li><strong>Cadena de Suministro y Logística</strong>: Mayor visibilidad, trazabilidad y eficiencia.</li>
+<li><strong>Ventas y Marketing</strong>: CRM, marketing digital y análisis de datos mejoran la captación y retención de clientes.</li>
+<li><strong>Servicio al Cliente</strong>: Canales digitales y chatbots agilizan la atención.</li>
+<li><strong>Gestión de Datos</strong>: Sistemas para recopilación, almacenamiento y análisis de datos.</li>
+<li><strong>Recursos Humanos</strong>: Digitalización de reclutamiento, gestión de talento y comunicación.</li>
+</ul>
+<h4 id="primeros-pasos-hacia-la-transformación-digital">Primeros Pasos hacia la Transformación Digital </h4>
+<p>El inicio de la transformación digital requiere planificación:</p>
+<ol>
+<li><strong>Evaluación y Diagnóstico</strong>: Analizar la madurez digital y realizar un análisis DAFO.</li>
+<li><strong>Definición de Visión y Objetivos</strong>: Establecer metas SMART.</li>
+<li><strong>Liderazgo y Compromiso</strong>: Asegurar el apoyo de la alta dirección.</li>
+<li><strong>Desarrollo de una Hoja de Ruta</strong>: Crear un plan escalonado y priorizado.</li>
+<li><strong>Proyectos Piloto</strong>: Iniciar con proyectos pequeños para probar y demostrar valor.</li>
+<li><strong>Gestión del Cambio y Comunicación</strong>: Involucrar a empleados y comunicar la visión.</li>
+<li><strong>Capacitación y Desarrollo de Habilidades</strong>: Identificar y formar en nuevas habilidades.</li>
+</ol>
+<p>La transformación digital es un proceso iterativo y continuo,   no un fin, sino un medio para alcanzar objetivos estratégicos.</p>
+<hr>
+<h3 id="tecnologías-habilitadoras-digitales-thd-en-la-transformación">Tecnologías Habilitadoras Digitales (THD) en la Transformación </h3>
+<h4 id="el-papel-fundamental-de-las-thd">El Papel Fundamental de las THD </h4>
+<p>Las Tecnologías Habilitadoras Digitales (THD) son herramientas tecnológicas que impulsan la transformación digital.   No operan aisladamente, sino que se combinan para crear soluciones innovadoras.   Entender "las THD implicadas en la digitalización de las etapas" es crucial para un plan efectivo.  Las THD permiten a las empresas:</p>
+<ul>
+<li><strong>Recopilar y Analizar Datos</strong>: Generar y analizar grandes volúmenes de datos.</li>
+<li><strong>Automatizar Procesos</strong>: Reducir intervención humana, aumentando eficiencia.</li>
+<li><strong>Mejorar la Conectividad</strong>: Facilitar comunicación y el intercambio de información.</li>
+<li><strong>Crear Experiencias Inmersivas</strong>: Desarrollar nuevas formas de interactuar con la información.</li>
+<li><strong>Optimizar la Producción</strong>: Desde el diseño hasta el mantenimiento.</li>
+<li><strong>Personalizar Productos y Servicios</strong>: Adaptar la oferta a necesidades individuales.</li>
+<li><strong>Garantizar la Seguridad</strong>: Proteger activos digitales e información sensible.</li>
+</ul>
+<h4 id="interrelación-de-las-thd-en-las-etapas-de-digitalización">Interrelación de las THD en las Etapas de Digitalización </h4>
+<p>La relación entre etapas de digitalización y THD es simbiótica.   Cada etapa se apoya en THD específicas.  Por ejemplo:</p>
+<ul>
+<li><strong>Diseño y Desarrollo de Producto</strong>: Fabricación aditiva (impresión 3D), gemelos digitales, realidad virtual/aumentada.</li>
+<li><strong>Producción</strong>: IoT conecta máquinas, robótica colaborativa trabaja con humanos, IA optimiza flujos de trabajo.   Cloud Computing gestiona los datos.</li>
+<li><strong>Logística y Cadena de Suministro</strong>: IoT y Blockchain para trazabilidad, Big Data e IA para optimización.</li>
+<li><strong>Ventas y Marketing</strong>: Big Data para comportamiento del cliente, IA para personalización, Cloud Computing para CRM y e-commerce.</li>
+<li><strong>Servicio Postventa y Mantenimiento</strong>: IoT para mantenimiento predictivo, RA asiste técnicos, chatbots (IA) gestionan consultas.<br>
+La elección de THD depende de los objetivos, el sector y los recursos.</li>
+</ul>
+<h4 id="ejemplos-de-thd-y-su-aplicación-en-la-transformación-empresarial">Ejemplos de THD y su Aplicación en la Transformación Empresarial: </h4>
+<ul>
+<li><strong>Internet de las Cosas (IoT)</strong>: Red de objetos con sensores que intercambian datos.   Aplicación: Monitorización en tiempo real, optimización de cadena de suministro, productos inteligentes.</li>
+<li><strong>Big Data y Analítica</strong>: Gestión y análisis de grandes volúmenes de datos para extraer conocimiento.   Aplicación: Toma de decisiones, personalización, optimización de procesos, predicción de tendencias.</li>
+<li><strong>Inteligencia Artificial (IA) y Machine Learning (ML)</strong>: IA imita la inteligencia humana;  ML permite a sistemas aprender de datos.   Aplicación: Automatización inteligente, chatbots, análisis predictivo, personalización masiva.</li>
+<li><strong>Cloud Computing (Computación en la Nube)</strong>: Servicios informáticos entregados por internet.   Aplicación: Escalabilidad, reducción de costes, acceso a tecnologías avanzadas, trabajo colaborativo.</li>
+<li><strong>Ciberseguridad</strong>: Protección contra ataques y accesos no autorizados.   Aplicación: Protección de activos digitales, confianza del cliente, cumplimiento normativo, continuidad del negocio.</li>
+<li><strong>Fabricación Aditiva (Impresión 3D)</strong>: Creación de objetos 3D capa por capa.   Aplicación: Prototipado rápido, producción personalizada, reducción de desperdicio.</li>
+<li><strong>Robótica Colaborativa (Cobots)</strong>: Robots que trabajan de forma segura con humanos.   Aplicación: Automatización de tareas repetitivas, flexibilidad en producción, mejora de productividad.</li>
+<li><strong>Realidad Aumentada (RA), Realidad Virtual (RV) y Realidad Mixta (RM)</strong>: RV (inmersión total digital), RA (superposición digital en mundo real), RM (fusión de mundos real y virtual).   Aplicación: Formación, asistencia remota, diseño, experiencia del cliente.</li>
+<li><strong>Gemelos Digitales (Digital Twins)</strong>: Réplica virtual de un objeto físico con datos en tiempo real.   Aplicación: Mantenimiento predictivo, optimización de rendimiento, simulación de escenarios.<br>
+La selección y combinación de estas THD es clave para el éxito del plan de transformación.</li>
+</ul>
+<hr>
+<h3 id="configuración-de-la-empresa-digitalizada">Configuración de la Empresa Digitalizada </h3>
+<p>Una vez implementadas las THD, la empresa se reconfigura significativamente,   manifestándose en cambios profundos y mejoras sustanciales.</p>
+<h4 id="cambios-introducidos-por-la-digitalización">Cambios Introducidos por la Digitalización </h4>
+<p>La transición a una empresa digitalizada implica transformaciones estructurales y funcionales:</p>
+<ul>
+<li><strong>Procesos Operativos Más Ágiles e Inteligentes</strong>:
+<ul>
+<li><strong>Automatización Extensiva</strong>: Tareas manuales automatizadas, liberando empleados para actividades de mayor valor.</li>
+<li><strong>Flujos de Trabajo Digitalizados</strong>: Procesos gestionados por plataformas digitales para mayor trazabilidad y colaboración.</li>
+<li><strong>Producción Flexible y Personalizada</strong>: Adaptación rápida a la demanda con fabricación aditiva y sistemas ciberfísicos.</li>
+<li><strong>Mantenimiento Predictivo</strong>: Sensores IoT anticipan fallos, programando mantenimiento preventivo.</li>
+</ul>
+</li>
+<li><strong>Nuevos Modelos de Negocio y Propuestas de Valor</strong>:
+<ul>
+<li><strong>Servitización</strong>: Productos se transforman en servicios (ej., "horas de funcionamiento" de una máquina).</li>
+<li><strong>Economía de Plataformas</strong>: Creación de plataformas que conectan actores del mercado.</li>
+<li><strong>Monetización de Datos</strong>: Ingresos del análisis y venta de datos anonimizados.</li>
+<li><strong>Modelos de Suscripción</strong>: Oferta de productos o servicios con pago recurrente.</li>
+<li><strong>Personalización Masiva</strong>: Oferta adaptada a necesidades individuales de muchos clientes.</li>
+</ul>
+</li>
+<li><strong>Cultura Organizacional Orientada a lo Digital</strong>:
+<ul>
+<li><strong>Toma de Decisiones Basada en Datos (Data-Driven Culture)</strong>: Decisiones fundamentadas en análisis de datos.</li>
+<li><strong>Agilidad y Adaptabilidad</strong>: Mayor capacidad de respuesta a cambios del mercado.</li>
+<li><strong>Colaboración y Comunicación Mejoradas</strong>: Herramientas digitales facilitan la colaboración.</li>
+<li><strong>Enfoque en el Cliente (Customer-Centricity)</strong>: Organización orientada a satisfacer necesidades del cliente.</li>
+<li><strong>Innovación Continua</strong>: Fomento de experimentación y mejora constante.<br>
+<img src=".img/5.3.png" alt="alt text"></li>
+</ul>
+</li>
+</ul>
+<h4 id="mejoras-producidas">Mejoras Producidas </h4>
+<p>La implementación exitosa de un plan de transformación genera beneficios tangibles e intangibles:</p>
+<ul>
+<li><strong>Mayor Eficiencia y Productividad</strong>:
+<ul>
+<li>Automatización reduce tiempos y errores.</li>
+<li>Optimización de la cadena de suministro minimiza cuellos de botella.</li>
+<li>Acceso a información en tiempo real mejora asignación de recursos.</li>
+</ul>
+</li>
+<li><strong>Toma de Decisiones Mejorada y Más Rápida</strong>:
+<ul>
+<li>Análisis de Big Data ofrece insights valiosos.</li>
+<li>Cuadros de mando y Business Intelligence dan visión clara del rendimiento.</li>
+</ul>
+</li>
+<li><strong>Mejora de la Experiencia del Cliente (CX)</strong>:
+<ul>
+<li>Personalización aumenta satisfacción y lealtad.</li>
+<li>Canales digitales ofrecen interacción fluida.</li>
+<li>Respuesta rápida mejora percepción del servicio.</li>
+</ul>
+</li>
+<li><strong>Creación de Nuevas Fuentes de Ingresos y Oportunidades de Mercado</strong>:
+<ul>
+<li>Nuevos modelos de negocio digitales abren vías de ingresos.</li>
+<li>Acceso a nuevos segmentos de clientes expande el mercado.</li>
+</ul>
+</li>
+<li><strong>Incremento de la Competitividad</strong>:
+<ul>
+<li>Reducción de costes y mayor agilidad mejoran la competencia.</li>
+<li>Innovación y adaptación aseguran relevancia a largo plazo.</li>
+</ul>
+</li>
+<li><strong>Optimización de Recursos y Sostenibilidad</strong>:
+<ul>
+<li>Mejor control de procesos reduce consumo de energía y materias primas.</li>
+</ul>
+</li>
+<li><strong>Mayor Resiliencia Empresarial</strong>:
+<ul>
+<li>Diversificación y operación remota hacen la empresa más resistente a crisis.</li>
+</ul>
+</li>
+<li><strong>Mejora del Compromiso y Desarrollo del Empleado</strong>:
+<ul>
+<li>Eliminación de tareas monótonas aumenta motivación.</li>
+<li>Inversión en capacitación digital mejora competencias.</li>
+</ul>
+</li>
+</ul>
+<p>En resumen, la empresa digitalizada opera de forma más inteligente, ágil y centrada en el cliente, prosperando en el siglo XXI.</p>
+<h3 id="el-plan-de-transformación">El Plan de Transformación </h3>
+<h4 id="definición-y-alcance-del-plan-de-transformación">Definición y Alcance del Plan de Transformación </h4>
+<p>Un "plan de transformación" es una hoja de ruta estratégica que guía a la organización de su estado actual a un estado futuro deseado (Empresa 4.0).   No solo implementa tecnología, sino que reestructura estrategia, procesos, cultura y capacidades del personal.  Su alcance es holístico e incluye:</p>
+<ul>
+<li><strong>Diagnóstico de la Situación Actual</strong>: Evaluación de madurez digital, fortalezas, debilidades y entorno.</li>
+<li><strong>Visión y Objetivos Estratégicos</strong>: Definición clara de lo que se busca lograr.</li>
+<li><strong>Identificación de Iniciativas Clave</strong>: Proyectos y acciones en tecnología, procesos, organización y personas.</li>
+<li><strong>Selección y Priorización de Tecnologías Habilitadoras (THD)</strong>: Determinación de THD adecuadas por impacto, coste y viabilidad.</li>
+<li><strong>Hoja de Ruta y Cronograma</strong>: Fases, plazos, hitos y responsables.</li>
+<li><strong>Presupuesto y Recursos</strong>: Asignación de recursos financieros, tecnológicos y humanos.</li>
+<li><strong>Gestión del Cambio y Comunicación</strong>: Estrategias para involucrar empleados y comunicar avances.</li>
+<li><strong>Métricas y KPIs</strong>: Definición de cómo se medirá el éxito.</li>
+<li><strong>Gestión de Riesgos</strong>: Identificación y mitigación de posibles riesgos.</li>
+</ul>
+<h4 id="fases-clave-de-un-plan-de-transformación">Fases Clave de un Plan de Transformación </h4>
+<p>Un plan de transformación generalmente sigue fases interconectadas:</p>
+<ol>
+<li><strong>Diagnóstico y Evaluación Inicial</strong>: Análisis interno (madurez digital, capacidades, cultura) y externo (tendencias, competencia).   Identificación de brechas.</li>
+<li><strong>Establecimiento de Objetivos y Hoja de Ruta</strong>: Definición de la visión de la empresa digitalizada, objetivos SMART y un cronograma realista.</li>
+<li><strong>Diseño y Selección de Soluciones y Tecnologías</strong>: Identificación de THD adecuadas, diseño de nuevos procesos digitalizados, selección de proveedores y definición de arquitectura tecnológica.</li>
+<li><strong>Implementación y Desarrollo</strong>: Ejecución de proyectos, implementación de nuevas tecnologías y sistemas, desarrollo de aplicaciones y pruebas piloto.</li>
+<li><strong>Gestión del Cambio y Capacitación</strong>: Comunicación constante, involucramiento de empleados, programas de capacitación y adaptación cultural.</li>
+<li><strong>Despliegue y Puesta en Marcha</strong>: Lanzamiento de nuevos procesos, sistemas y servicios digitalizados, migración de datos y soporte técnico.</li>
+<li><strong>Medición, Evaluación y Ajuste Continuo</strong>: Monitorización de KPIs, feedback, análisis de resultados y ajustes continuos.<br>
+La transformación digital es un proceso de evolución constante.<br>
+<img src=".img/5.1.png" alt="Fases plan trasnformación"></li>
+</ol>
+<h4 id="recursos-empleados-en-la-transformación">Recursos Empleados en la Transformación </h4>
+<p>La ejecución exitosa requiere movilización y gestión eficiente de recursos:</p>
+<ul>
+<li><strong>Recursos Humanos y Talento Digital</strong>: Liderazgo comprometido, equipos multifuncionales, nuevos perfiles y competencias (reskilling, upskilling) y agentes de cambio.</li>
+<li><strong>Recursos Tecnológicos</strong>: Hardware (servidores, IoT, robots), software (Big Data, IA, ERP/CRM en la nube), infraestructura de TI (red, almacenamiento, conectividad) e integración de sistemas.</li>
+<li><strong>Recursos Financieros y Presupuesto</strong>: Inversión inicial, costes operativos, ROI y fuentes de financiación.</li>
+<li><strong>Recursos Externos</strong>: Consultoría especializada, proveedores de tecnología, instituciones de formación y ecosistema de innovación.<br>
+La gestión coordinada de estos recursos es determinante para el éxito,   siendo los "recursos humanos" críticos ya que las personas adoptan y adaptan la tecnología para generar valor.</li>
+</ul>
+<h3 id="el-rol-de-los-recursos-humanos-en-la-empresa-40">El Rol de los Recursos Humanos en la Empresa 4.0 </h3>
+<p>La transformación a una "Empresa 4.0" implica una reevaluación profunda del capital humano.   El departamento de RRHH es clave, evolucionando de una función administrativa a un socio estratégico que impulsa el cambio.</p>
+<h4 id="adaptación-de-roles-y-competencias">Adaptación de Roles y Competencias </h4>
+<p>La digitalización redefine roles y crea nuevas necesidades de competencias:</p>
+<ul>
+<li><strong>Automatización de Tareas Rutinarias</strong>: Las THD automatizan tareas repetitivas, reorientando a empleados hacia actividades estratégicas y creativas.</li>
+<li><strong>Nuevas Habilidades Digitales (Digital Skills)</strong>: Demanda de competencias en análisis de datos, IA, ciberseguridad, programación, gestión de proyectos ágiles, marketing digital y manejo de herramientas colaborativas.</li>
+<li><strong>Habilidades Blandas (Soft Skills) Potenciadas</strong>: Pensamiento crítico, creatividad, inteligencia emocional, comunicación y adaptabilidad son cruciales.</li>
+<li><strong>Colaboración Humano-Máquina</strong>: Necesidad de aprender a trabajar con sistemas inteligentes y robots.</li>
+</ul>
+<h4 id="nuevos-perfiles-profesionales">Nuevos Perfiles Profesionales </h4>
+<p>La Empresa 4.0 requiere perfiles profesionales en auge:</p>
+<ul>
+<li>Científico de Datos (Data Scientist)</li>
+<li>Especialista en Inteligencia Artificial/Machine Learning</li>
+<li>Experto en Ciberseguridad</li>
+<li>Arquitecto Cloud</li>
+<li>Especialista en IoT</li>
+<li>Digital Transformation Manager</li>
+<li>Chief Data Officer (CDO)<br>
+RRHH debe liderar la identificación de estas necesidades de talento, mediante contratación o desarrollo interno.</li>
+</ul>
+<h4 id="cultura-de-aprendizaje-continuo-y-agilidad">Cultura de Aprendizaje Continuo y Agilidad </h4>
+<p>La velocidad del cambio tecnológico exige una mentalidad de aprendizaje constante:</p>
+<ul>
+<li><strong>Reskilling y Upskilling</strong>: Programas de recualificación y actualización de habilidades.</li>
+<li><strong>Plataformas de Aprendizaje Digital</strong>: Fomentar el uso de e-learning y MOOCs.</li>
+<li><strong>Fomentar la Curiosidad y la Experimentación</strong>: Crear un entorno que valore la curiosidad y el conocimiento compartido.</li>
+<li><strong>Metodologías Ágiles</strong>: Adopción de enfoques ágiles (Scrum, Kanban) en gestión de proyectos y organización del trabajo.</li>
+</ul>
+<h4 id="liderazgo-en-la-transformación-digital">Liderazgo en la Transformación Digital </h4>
+<p>El liderazgo también debe transformarse:</p>
+<ul>
+<li><strong>Líderes Digitales</strong>: Directivos que comprendan la digitalización y lideren equipos en entornos de cambio.</li>
+<li><strong>Empoderamiento y Autonomía</strong>: Menor jerarquía y mayor autonomía para la toma de decisiones.</li>
+<li><strong>Comunicación Transparente</strong>: Comunicación abierta y constante sobre objetivos y avances.</li>
+</ul>
+<h4 id="el-rol-estratégico-de-rrhh-en-la-empresa-40">El Rol Estratégico de RRHH en la Empresa 4.0: </h4>
+<ul>
+<li><strong>Atracción y Retención de Talento Digital</strong>: Estrategias para atraer y retener perfiles demandados.</li>
+<li><strong>Diseño Organizacional</strong>: Adaptar la estructura de la empresa para mayor flexibilidad.</li>
+<li><strong>Gestión del Cambio</strong>: Liderar iniciativas para minimizar la resistencia y asegurar la adopción.</li>
+<li><strong>Bienestar del Empleado</strong>: Asegurar que la digitalización no genere estrés excesivo y mejore la experiencia del empleado.</li>
+<li><strong>Análisis de Datos de RRHH (People Analytics)</strong>: Uso de datos para decisiones informadas sobre talento y clima laboral.</li>
+</ul>
+<p>La transformación hacia la Empresa 4.0 es un desafío tecnológico y humano.   Un RRHH proactivo y estratégico es indispensable para que la organización cuente con las personas, habilidades y cultura necesarias.</p>
+<h3 id="conclusiones">Conclusiones </h3>
+<div class="admonition summary">
+<p class="admonition-title">Ideas principales a recordar</p>
+<ul>
+<li>Necesidad Ineludible: La transformación digital es crucial para la supervivencia y prosperidad.</li>
+<li>Diagnóstico Fundamental: Comprender la empresa clásica es el primer paso para el cambio.</li>
+<li>Tecnologías como Habilitadoras: Las THD (IoT, IA, Big Data, Cloud) materializan la transformación, alineadas con objetivos estratégicos.</li>
+<li>Cambio Holístico: La digitalización impacta procesos, modelos de negocio, cultura y personas, mejorando eficiencia, competitividad e innovación.</li>
+<li>Planificación Estratégica**: Un plan estructurado es crucial para guiar el proceso y mitigar riesgos.</li>
+<li>El Factor Humano es Clave**: La tecnología no transforma sola; la adaptación de roles, desarrollo de competencias y una cultura de aprendizaje continuo son vitales.   RRHH es un actor estratégico.</li>
+</ul>
+</div>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
